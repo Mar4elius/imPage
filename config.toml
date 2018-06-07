@@ -1,3 +1,15 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Igor Marchenko"
+author = "Igor Marchenko"
+Description = "Portfolio Page"
+[params]
+copyright = "Copyright (c) 2018, all rights reserved."
+
+
+
+[params.contacts]
+
+address = "Edmonton, AB, Canada"
+email = "imarchenko1@protonmail.com"
+phone = "+1780-123-4566" 
