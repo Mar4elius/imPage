@@ -1,0 +1,22 @@
+[
+    {
+        "projectID": 1,
+        "projectName": "Project 1",
+        "projectImg": "img/projects.png",
+        "projectProgress": 65
+    },
+
+    {
+        "projectID": 2,
+        "projectName": "Project 2",
+        "projectImg": "img/projects.png",
+        "projectProgress": 100
+    },
+    
+    {
+        "projectID": 3,
+        "projectName": "Project 3",
+        "projectImg": "img/projects.png",
+        "projectProgress": 80
+    }
+]
