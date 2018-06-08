@@ -1,6 +1,6 @@
 <footer class="page-footer font-small odd_background p-4 d-flex">
     <div class="container">
-        <div class="row">
+        <div class="row text-center">
 
             <div class="col-lg-3">
                 <h5>CONTACTS</h5>
@@ -25,13 +25,14 @@
 _________________________________________________________ -->
 <div id="copyright">
     <div class="even_background">
-        <div class="container d-flex">
-            <div class="col-lg-12">
-                <div class="row">
+        <div class="container">           
+                <div class="row vertical-center">
                     {{ if isset .Site.Params "copyright" }}
-                    <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
+                        <div class="col-lg-6">
+                            {{ .Site.Params.copyright | safeHTML }}
+                        </div>
                     {{ end }}
-                    <p class="justify-content-end">
+                    <div class="col-lg-6">
                         Created using
                         <a href="https://gohugo.io/">
                             <img class="img-fluid" style="size:25%" src="{{.Site.BaseURL}}/img/Hugo.png">
@@ -40,9 +41,8 @@ _________________________________________________________ -->
                             <img class="img-fluid" src="{{.Site.BaseURL}}/img/bootstrap.png">
                         </a> and 
                         <img src="{{.Site.BaseURL}}/img/brain.png" >
-                    </p>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>

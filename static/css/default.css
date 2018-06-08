@@ -3,12 +3,25 @@
     --nav-bg-color:#3d4d5c;
     --odd-bg-color:#758595;
     --even-bg-color:#e9eae2;
+    --h-tag-color: #34a4a5;
+    --orange-color: #f55f2d;
 }
 .odd_background{
     background-color: var(--odd-bg-color);
 }
 .even_background{
     background-color: var(--even-bg-color);
+}
+
+h1,h2,h5{
+    color:var(--h-tag-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr{
+    background-color: var(--h-tag-color);
+    height: 2rem;
 }
 
 /* ---/GLOBAL VARIABLES--- */
@@ -18,12 +31,12 @@ nav {
 background-color: var(--nav-bg-color);
 }
 nav a{
-    color: #34a4a5;
+    color: var(--h-tag-color);
     font-weight: 700;
 }
 
 nav a:hover{
-    color: #f55f2d;
+    color: var(--orange-color);
 }
 
 /* ---/HEADER--- */
@@ -34,5 +47,16 @@ nav a:hover{
 /* ---/ABOUT ME--- */
 
 /* ---PROJECTS--- */
+.progress-bar-color{
+    background-color: var(--orange-color);
 
+}
 /* ---/PROJECTS--- */
+
+
+/* ---FOOTER--- */
+.vertical-center {   
+    display: flex;
+    align-items: center;
+  }
+  /* ---FOOTER--- */
