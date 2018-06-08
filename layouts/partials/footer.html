@@ -1,4 +1,4 @@
-<footer class="page-footer font-small bg-dark p-4 m-4 d-flex">
+<footer class="page-footer font-small odd_background p-4 d-flex">
     <div class="container">
         <div class="row">
 
@@ -24,21 +24,22 @@
 <!-- *** COPYRIGHT ***
 _________________________________________________________ -->
 <div id="copyright">
-    <div class="bg-light">
-        <div class="container">
+    <div class="even_background">
+        <div class="container d-flex">
             <div class="col-lg-12">
                 <div class="row">
                     {{ if isset .Site.Params "copyright" }}
                     <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
                     {{ end }}
-                    <p class="pull-right">
+                    <p class="justify-content-end">
                         Created using
                         <a href="https://gohugo.io/">
-                            <img class="img-fluid" src="{{.Site.BaseURL}}/img/Hugo.png">
-                        </a> and
+                            <img class="img-fluid" style="size:25%" src="{{.Site.BaseURL}}/img/Hugo.png">
+                        </a>,
                         <a href="https://getbootstrap.com">
                             <img class="img-fluid" src="{{.Site.BaseURL}}/img/bootstrap.png">
-                        </a>
+                        </a> and 
+                        <img src="{{.Site.BaseURL}}/img/brain.png" >
                     </p>
                 </div>
             </div>

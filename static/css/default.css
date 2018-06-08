@@ -1,0 +1,38 @@
+/* ---GLOBAL VARIABLES--- */
+:root {
+    --nav-bg-color:#3d4d5c;
+    --odd-bg-color:#758595;
+    --even-bg-color:#e9eae2;
+}
+.odd_background{
+    background-color: var(--odd-bg-color);
+}
+.even_background{
+    background-color: var(--even-bg-color);
+}
+
+/* ---/GLOBAL VARIABLES--- */
+
+/* ---HEADER--- */
+nav {
+background-color: var(--nav-bg-color);
+}
+nav a{
+    color: #34a4a5;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: #f55f2d;
+}
+
+/* ---/HEADER--- */
+
+/* ---ABOUT ME--- */
+
+
+/* ---/ABOUT ME--- */
+
+/* ---PROJECTS--- */
+
+/* ---/PROJECTS--- */

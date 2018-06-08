@@ -18,5 +18,26 @@
         "projectName": "Project 3",
         "projectImg": "img/projects.png",
         "projectProgress": 80
+    },
+
+    {
+        "projectID": 4,
+        "projectName": "Project 4",
+        "projectImg": "img/projects.png",
+        "projectProgress": 75
+    },
+
+    {
+        "projectID": 5,
+        "projectName": "Project 5",
+        "projectImg": "img/projects.png",
+        "projectProgress": 50
+    },
+
+    {
+        "projectID": 6,
+        "projectName": "Project 6",
+        "projectImg": "img/projects.png",
+        "projectProgress": 30
     }
 ]

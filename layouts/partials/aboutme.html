@@ -1,12 +1,14 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8">
-            <h1>{{.Site.Data.aboutme.title}}</h1>
-            <p>{{.Site.Data.aboutme.description}}</p>
+<div class="odd_background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>{{.Site.Data.aboutme.title}}</h1>
+                <p>{{.Site.Data.aboutme.description}}</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="{{.Site.BaseURL}}{{.Site.Data.aboutme.image}}">
+            </div>
         </div>
-        <div class="col-lg-4">
-            <img class="rounded-circle" src="{{.Site.BaseURL}}{{.Site.Data.aboutme.image}}">
-        </div>
-    </div>
 
+    </div>
 </div>
