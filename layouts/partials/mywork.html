@@ -1,15 +1,14 @@
 <div class="even_background">
-    <div class="container">
-        <div class="row text-center">
+    <div class="container" id="mywork">
+        <div class="row text-center heading">
             <div class="col-lg-12">
                 <h1>Projects</h1>
-                <hr>
             </div>
         </div>
         <div class="row">
             {{range .Site.Data.mywork}}
             <div class="col-lg-4 text-center pb-5">
-                <h2>{{.projectName}}</h2>
+                <h3>{{.projectName}}</h3>
                 <img class="img-fluid" src="{{ .Site.BaseURL }}{{.projectImg}}">
                 
                 <div class="progress mt-4">

@@ -1,19 +1,30 @@
 <footer class="page-footer font-small odd_background p-4 d-flex">
     <div class="container">
-        <div class="row text-center">
+        <div class="row text-center heading">
 
             <div class="col-lg-3">
-                <h5>CONTACTS</h5>
-                {{ .Site.Params.contacts.phone}} {{ .Site.Params.contacts.email}} {{ .Site.Params.contacts.address}}
+                <h4>CONTACTS</h4>
+                <p class="text-left">
+                    <i class="fas fa-phone"></i>&nbsp;{{.Site.Params.contacts.phone}}
+                    <br>
+                    <i class="fas fa-envelope-open"></i>&nbsp;{{ .Site.Params.contacts.email}} 
+                    <i class="fas fa-home"></i>&nbsp;{{ .Site.Params.contacts.address}}</p>               
+                <a href="#" class="btn btn-contacts">Go to contact page</a>
+            </div>
+
+            <div class="col-lg-3">
+                <h4>FOLLOW ME</h4>
                 <br>
-                <a href="#" class="btn btn-small btn-template-main">Button</a>
-            </div>
+                <a target="_blank" href="{{.Site.Params.contacts.github}}">
+                    <i class="fab fa-github-square fa-3x pr-2"></i>
+                </a>
+                <a target="_blank" href="{{.Site.Params.contacts.linkdIn}}">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
 
-            <div class="col-lg-3">
-                <h5>FOLLOW ME</h5>
             </div>
             <div class="col-lg-3">
-                <h5>TECHNOLOGY</h5>
+                <h4>TECHNOLOGY</h4>
             </div>
             <div class="col-lg-3">
 
@@ -23,30 +34,32 @@
 </footer>
 <!-- *** COPYRIGHT ***
 _________________________________________________________ -->
-<div id="copyright">
-    <div class="even_background">
-        <div class="container">           
-                <div class="row vertical-center">
-                    {{ if isset .Site.Params "copyright" }}
-                        <div class="col-lg-6">
-                            {{ .Site.Params.copyright | safeHTML }}
-                        </div>
-                    {{ end }}
-                    <div class="col-lg-6">
-                        Created using
+<div class="copyright">
+        <div class="container">
+            <div class="row py-4 align-items-center">
+                <!-- <div class="col-lg-6"> -->
+                    <div class="">
+                        {{ if isset .Site.Params "copyright" }} 
+                        <p>{{ .Site.Params.copyright | safeHTML }}</p> 
+                            {{ end }}
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <div class="ml-auto">
+                        <p>Created using</p>
                         <a href="https://gohugo.io/">
                             <img class="img-fluid" style="size:25%" src="{{.Site.BaseURL}}/img/Hugo.png">
-                        </a>,
+                        </a><p>,</p>
                         <a href="https://getbootstrap.com">
                             <img class="img-fluid" src="{{.Site.BaseURL}}/img/bootstrap.png">
-                        </a> and 
-                        <img src="{{.Site.BaseURL}}/img/brain.png" >
+                        </a> <p>and</p>
+                        <img src="{{.Site.BaseURL}}/img/brain.png">
                     </div>
-                </div>
+                <!-- </div> -->
+            </div>
         </div>
-    </div>
 </div>
-<!-- /#copyright -->
+</div>
 
 <!-- *** COPYRIGHT END *** -->
 
@@ -56,6 +69,4 @@ _________________________________________________________ -->
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-</body>
 
-</html>
