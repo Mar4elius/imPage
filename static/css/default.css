@@ -1,10 +1,10 @@
 /* ---GLOBAL VARIABLES--- */
 :root {
-    --nav-bg-color:#3d4d5c;
-    --odd-bg-color:#758595;
-    --even-bg-color:#e9eae2;
-    --h-tag-color: #34a4a5;
-    --orange-color: #f55f2d;
+    --nav-bg-color:#2c3e50;
+    --odd-bg-color:#ecf0f1;
+    --even-bg-color:#b5b5b7 ;
+    --h-tag-color:  #3498DB;
+    --orange-color: #E74C3C;
 }
 .odd_background{
     background-color: var(--odd-bg-color);
@@ -31,15 +31,48 @@
 /* ---HEADER--- */
 nav {
 background-color: var(--nav-bg-color);
+text-transform: uppercase;
+
 }
 nav a{
     color: var(--h-tag-color);
     font-weight: 700;
 }
-
 nav a:hover{
     color: var(--orange-color);
 }
+
+.header_image{
+    background: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 50rem;;
+    width: auto;
+   
+}
+header h1{
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+header h1 span{ 
+    display: inline-block;
+    padding: 0.5rem;
+    border: white solid 0.8rem;
+}
+.kicker{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color:white;
+}
+
+
+
 
 /* ---/HEADER--- */
 

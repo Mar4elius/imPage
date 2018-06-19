@@ -2,7 +2,9 @@
 title: "Contacts"
 date: 2018-06-11T15:10:00-06:00
 draft: true
-type: "contacts"
+type: "contacts" #find template in layouts folder with the name "contacts" and use that template to display current info
+menu: "mainmenu" # means that this is the will be a nivagation menu page.
+image: "john-paul-joseph-henry-245902-unsplash.jpg"
 
 ---
 

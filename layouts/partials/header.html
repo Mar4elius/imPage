@@ -1,34 +1,46 @@
 <header>
-  <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm ">
     <!--need this container to adjust position of the elemens inside nav tag -->
-    <div class="container">
-      <a class="navbar-brand" href="#">Igor Marchenko</a>
+    <div class="container ">
+      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="img/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="{{.Site.BaseURL}}#aboutme">ABOUT</a>
+            <a class="nav-link" href="{{.Site.BaseURL}}#aboutme">About</a>
           </li>
+          {{ range .Site.Menus.mainmenu}}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL }}">{{ .Name}}</a>
+          </li>
+          {{end}}
+
+          <!-- 
           <li class="nav-item">
             <a class="nav-link" href="{{.Site.BaseURL}}#mywork">MY WORK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTS</a>
-          </li>
+            <a class="nav-link" href="{{.Site.BaseURL}}#contacts">CONTACTS</a>
+          </li> -->
         </ul>
       </div>
+      
     </div>
   </nav>
-  <div class="text-center text-block">
-    <div class="card">
-      <img src="{{ .Site.BaseURL }}img/header.jpg" alt="{{ .Title}} logo" class="img-fluid">
-      <div class="card-img-overlay">
-        <p>Image created by
-          <a href="{{ .Site.Params.navimg}}">Makyzz / Freepik</a>
-        </p>
+
+  <div class="header_image d-flex align-items-center justify-content-center"> 
+      {{if eq .Params.type "contacts"}}
+      <img src="{{ .Site.BaseURL }}img/john-paul-joseph-henry-245902-unsplash.jpg" alt="{{ .Title}} logo" class="img-fluid"> 
+      {{else}}
+      <!-- <img src="{{ .Site.BaseURL }}img/header.jpg" alt="{{ .Title}} logo" class="img-fluid"> -->
+      <div class="">
+        
+        <h1><span>Igor Marchenko</span></h1>
+        <p class="kicker">Programmer // Thinker // Human </p>
       </div>
-    </div>
+      {{end}}
+
   </div>
 </header>
