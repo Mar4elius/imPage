@@ -1,5 +1,5 @@
 $(document).ready(function (e) {
-
+    var flag = true; // need this flag to run bar animation;
     // animation for icons
     $("i").hover(
         function () {
@@ -12,30 +12,29 @@ $(document).ready(function (e) {
 
     $(window).scroll(function (evt) {
 
-
         evt.preventDefault();
         //get current position of the scroll
         var currentScrlPos = $(window).scrollTop();
         //get the top position of div
         var scrollOffset = $('#mywork').offset().top;
-
-        
-        var flag = true;
-
-        //console.log(currentScrlPos);
-
-
-        if (currentScrlPos >= scrollOffset) {
-            var bar = document.getElementsByClassName('progress-bar');
-            var width = 1;
-
-            bar = fillProgressBar(bar, width);
-
-            setTimeout(function () { emptyProgressBar(bar, width); }, 1500);
-
-            setTimeout(function () { finalProgressBar(bar); }, 3000);
-            $(window).off('scroll');
+        //if user reaches the top of the page reset flag 
+        if (currentScrlPos >= 0 && currentScrlPos <= 50) {
+            flag = true;
         }
-        
+        //console.log(currentScrlPos);
+        if (flag) {
+            if (currentScrlPos >= scrollOffset) {
+                var bar = document.getElementsByClassName('progress-bar');
+                var width = 1;
+
+                bar = fillProgressBar(bar, width);
+
+                setTimeout(function () { emptyProgressBar(bar, width); }, 1500);
+
+                setTimeout(function () { finalProgressBar(bar); }, 3000);
+                flag = false;
+            }
+        }
+
     }); // window scroll
 });// \document
