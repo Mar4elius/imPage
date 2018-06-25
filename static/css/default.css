@@ -45,12 +45,19 @@ nav a:hover{
 .header_image{
     background: url("../img/header.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-attachment: fixed;
-    height: 50rem;;
-    width: auto;
-   
+    height: 50rem;
 }
+/* header image for contacts */
+.header_image_contacts{
+    background: url("../img/contacts.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 40rem;   
+}
+
 header h1{
     font-size: 6.2rem;
     font-weight: 700;

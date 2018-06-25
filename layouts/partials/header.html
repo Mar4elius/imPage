@@ -2,7 +2,9 @@
   <nav class="navbar navbar-expand-sm ">
     <!--need this container to adjust position of the elemens inside nav tag -->
     <div class="container ">
-      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="img/logo.png"></a>
+      <a class="navbar-brand" href="{{.Site.BaseURL}}">
+        <img src="{{.Site.BaseURL}}/img/logo.png">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,36 +13,30 @@
           <li class="nav-item">
             <a class="nav-link" href="{{.Site.BaseURL}}#aboutme">About</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{.Site.BaseURL}}#mywork">Work</a>
+          </li>
           {{ range .Site.Menus.mainmenu}}
           <li class="nav-item">
             <a class="nav-link" href="{{ .URL }}">{{ .Name}}</a>
           </li>
           {{end}}
-
-          <!-- 
-          <li class="nav-item">
-            <a class="nav-link" href="{{.Site.BaseURL}}#mywork">MY WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{.Site.BaseURL}}#contacts">CONTACTS</a>
-          </li> -->
         </ul>
       </div>
-      
+
     </div>
   </nav>
-
-  <div class="header_image d-flex align-items-center justify-content-center"> 
-      {{if eq .Params.type "contacts"}}
-      <img src="{{ .Site.BaseURL }}img/john-paul-joseph-henry-245902-unsplash.jpg" alt="{{ .Title}} logo" class="img-fluid"> 
-      {{else}}
-      <!-- <img src="{{ .Site.BaseURL }}img/header.jpg" alt="{{ .Title}} logo" class="img-fluid"> -->
+  {{if eq .Params.type "contacts"}}
+  <div class="header_image_contacts d-flex align-items-center justify-content-center">
+    {{else}}
+    <div class="header_image d-flex align-items-center justify-content-center">
       <div class="">
-        
-        <h1><span>Igor Marchenko</span></h1>
-        <p class="kicker">Programmer // Thinker // Human </p>
+        <h1>
+          <span>Igor Marchenko</span>
+        </h1>
+        <p class="kicker">Programmer // Thinker // Human</p>
       </div>
       {{end}}
 
-  </div>
+    </div>
 </header>

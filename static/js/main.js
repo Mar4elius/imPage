@@ -29,9 +29,9 @@ $(document).ready(function (e) {
 
                 bar = fillProgressBar(bar, width);
 
-                setTimeout(function () { emptyProgressBar(bar, width); }, 1500);
+                setTimeout(function () { emptyProgressBar(bar, width); }, 1000);
 
-                setTimeout(function () { finalProgressBar(bar); }, 3000);
+                setTimeout(function () { finalProgressBar(bar); }, 2500);
                 flag = false;
             }
         }

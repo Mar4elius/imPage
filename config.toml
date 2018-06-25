@@ -5,7 +5,6 @@ author = "Igor Marchenko"
 Description = "Portfolio Page"
 [params]
 copyright = "Copyright (c) 2018, all rights reserved."
-navimg = "https://www.freepik.com/makyzz"
 
 
 [params.contacts]

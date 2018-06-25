@@ -9,7 +9,7 @@
                     <br>
                     <i class="fas fa-envelope-open"></i>&nbsp;{{ .Site.Params.contacts.email}} 
                     <i class="fas fa-home"></i>&nbsp;{{ .Site.Params.contacts.address}}</p>               
-                <a href="#" class="btn btn-contacts">Go to contact page</a>
+                <a href="{{.Site.BaseURL}}/contacts" class="btn btn-contacts">Go to contact page</a>
             </div>
 
             <div class="col-lg-3">
@@ -71,4 +71,5 @@ _________________________________________________________ -->
     crossorigin="anonymous"></script>
 <script src="{{ .Site.BaseURL }}/js/functions.js"></script>
 <script src="{{ .Site.BaseURL }}/js/main.js"></script>
+<script src="{{ .Site.BaseURL }}/js/jquery.validate.js"></script>
 
