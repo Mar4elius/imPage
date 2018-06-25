@@ -99,6 +99,15 @@ h3{
 /* ---/PROJECTS--- */
 
 
+/* ---GOOGLE MAPS--- */
+#map {
+    width: 100%;
+    height: 400px;
+  }
+
+/* ---/GOOGLE MAPS--- */
+
+
 /* ---FOOTER--- */
   i{
       color:var(--orange-color);
@@ -133,10 +142,5 @@ h3{
     background-color: var(--nav-bg-color);
     border: 0.1rem solid var(--nav-bg-color);
     }
-
-    
-
-
-  
 
   /* ---FOOTER--- */

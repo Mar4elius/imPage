@@ -42,7 +42,6 @@ $(function () {
         }
     });
 
-
     $("form").validate({
         rules: {
             name: {
@@ -78,3 +77,156 @@ $(function () {
         }
     });
 });
+
+//google maps
+function initMap(){
+    //edmonton downtown location
+    var edmonton = {lat: 53.540748, lng:-113.499914};
+    var mapOptions = {
+        zoom: 10, 
+        center: edmonton, 
+        streetViewControl:false,
+        overviewMapControl:false,
+        mapTypeControlOptions:{ style: google.maps.MapTypeControlStyle.DROPDOWN_MENU //DEFAULT and DROPDOWN_MENU
+        },
+        zoomControl:true,
+        fullscreenControl:false
+
+    };//end options
+
+    var customStyle =
+    [
+        {
+            "featureType": "administrative",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": "-100"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.province",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": 65
+                },
+                {
+                    "visibility": "on"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "lightness": "50"
+                },
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": "-100"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "lightness": "30"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "lightness": "40"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "saturation": -100
+                },
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "hue": "#ffff00"
+                },
+                {
+                    "lightness": -25
+                },
+                {
+                    "saturation": -97
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [
+                {
+                    "lightness": -25
+                },
+                {
+                    "saturation": -100
+                }
+            ]
+        }
+    ];
+    
+    //map
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    //marker position
+    var marker = new google.maps.Marker({position: edmonton, map: map});
+
+    map.setOptions({styles: customStyle});
+
+   
+}

@@ -37,4 +37,6 @@ $(document).ready(function (e) {
         }
 
     }); // window scroll
+
+    google.maps.event.addDomListener(window,'load', initMap);
 });// \document
