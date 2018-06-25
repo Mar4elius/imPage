@@ -19,17 +19,17 @@
                     <form method="POST" id="contactsForm" action="https://formspree.io/{{.Site.Params.contacts.email}}">
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label for="name" class="mr-auto">Your Name</label>
+                                <label for="name" class="mr-auto">Your Name:</label>
                                 <input type="text" class="form-control" name="name" minlength="2" id="name" required>
                             </div>
                             <div class="form-group col-sm-6">
-                                <label for="email" class="mr-auto">Your Email</label>
+                                <label for="email" class="mr-auto">Your Email:</label>
                                 <input type="email" class="form-control" name="email" id="email" required>
                             </div>
                             <div class="form-group col-sm-12">
                                 <div class="d-flex flex-column">
-                                    <label for="message" class="mr-auto">Your Message</label>
-                                    <textarea id="message" class="form-contorl" name="message" rows="7" required></textarea>
+                                    <label for="message" class="mr-auto">Your Message:</label>
+                                    <textarea id="message" class="form-contorl" name="message" rows="7" minlength="25" required></textarea>
                                 </div>
                                 <br>
                             </div>
@@ -40,9 +40,6 @@
 
                         </div>
                     </form>
-                    <script>
-                    $("#contactsForm").validate();
-                    </script>
                 </div>
 
 

@@ -28,3 +28,53 @@ function finalProgressBar(bar) {
         bar[k].style.width = finallBar;
     }
 }
+//  validation for input form
+$(function () {
+    
+    $.validator.setDefaults({
+        
+        highlight: function(element){
+           // $(element).closest('.form-group').addClass('text-warning');
+            $('.error').addClass('text-danger');
+        },
+        unhighlight: function(element){
+            $('#.error').removeClass('text-danger');
+        }
+    });
+
+
+    $("form").validate({
+        rules: {
+            name: {
+                required: true,
+                lettersonly: true,
+                name: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true,
+                message: true,
+                minlength: 25
+            }
+        },
+        messages: {
+            name: {
+                required: 'Please enter your name.',
+                minlength: 'Name must have at least <em>2</em> characters.',
+                lettersonly: 'Name <em>can not</em> contain numbers.'
+            },
+            email: {
+                required: 'Please enter your email address.',
+                email: 'Please enter a <em>valid</em> email address.'
+            },
+            message: {
+                required: 'Please enter your message.',
+                minlength: 'Message must have at least 25 characters.'
+            }
+        }
+    });
+});
