@@ -3,8 +3,10 @@ languageCode = "en-us"
 title = "Igor Marchenko"
 author = "Igor Marchenko"
 Description = "Portfolio Page"
+googleAnalytics = "UA-121439989-1"
+
 [params]
-copyright = "Copyright (c) 2018, all rights reserved."
+copyright = "Copyright (c) 2018, Igor Marchenko."
 
 
 [params.contacts]

@@ -24,6 +24,9 @@
     letter-spacing: 0.2rem;
     display: inline-block;
 }
+h6 {
+    color:var(--h-tag-color);
+}
 
 
 /* ---/GLOBAL VARIABLES--- */
