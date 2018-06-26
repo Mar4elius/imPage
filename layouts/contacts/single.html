@@ -20,16 +20,16 @@
                     <form method="POST" id="contactsForm" action="https://formspree.io/{{.Site.Params.contacts.email}}">
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label for="name" class="mr-auto">Your Name:</label>
+                                <label for="name" class="mr-auto"><h6>Your Name:</h6></label>
                                 <input type="text" class="form-control" name="name" minlength="2" id="name" required>
                             </div>
                             <div class="form-group col-sm-6">
-                                <label for="email" class="mr-auto">Your Email:</label>
+                                <label for="email" class="mr-auto"><h6>Your Email:</h6></label>
                                 <input type="email" class="form-control" name="email" id="email" required>
                             </div>
                             <div class="form-group col-sm-12">
                                 <div class="d-flex flex-column">
-                                    <label for="message" class="mr-auto">Your Message:</label>
+                                    <label for="message" class="mr-auto"><h6>Your Message:</h6></label>
                                     <textarea id="message" class="form-contorl" name="message" rows="7" minlength="25" required></textarea>
                                 </div>
                                 <br>
@@ -44,15 +44,15 @@
                 </div>
                 <div class="col-lg-4">
                     <p class="text-left">
-                        <h6>Let's chat!</h6>
+                        <h5>Let's chat!</h5>
                         <i class="fas fa-phone"></i>&nbsp;{{.Site.Params.contacts.phone}}
                         <br>
                         <i class="fas fa-envelope-open"></i>&nbsp;{{ .Site.Params.contacts.email}}<br>
-                        <h6>Location</h6> 
+                        <h5 class="pt-2">Location</h5> 
                         <i class="fas fa-home"></i>&nbsp;{{ .Site.Params.contacts.address}}</p>
                         
                         <h4>Social</h4>
-                        <br>
+                        
                         <a target="_blank" href="{{.Site.Params.contacts.github}}">
                             <i class="fab fa-github-square fa-3x pr-2"></i>
                         </a>
