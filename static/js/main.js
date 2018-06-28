@@ -21,7 +21,7 @@ $(document).ready(function (e) {
       var progress = bar[5].getAttribute('data-progress').slice(0, -1);
       //run confetti animation if progress 100%
       if (progress == 100) {
-        $('.text').text('Finished');
+        $('.text').text('Completed!!!');
         $('.text').addClass('animated infinite tada');
         $(this).addClass("confettiBlock");
         
@@ -32,7 +32,7 @@ $(document).ready(function (e) {
         }
       }else{
         $('.text').text('In progress...');
-        $('.text').addClass('animated infinite hinge');
+        $('.text').addClass('animated jackInTheBox');
       }
     },
     //function for hover off
@@ -45,7 +45,7 @@ $(document).ready(function (e) {
         confetti[i].remove();
       }
       $(this).removeClass('confettiBlock');
-      $('.text').removeClass('animated infinite hinge');
+      $('.text').removeClass('animated jackInTheBox');
       $('.text').removeClass('animated infinite tada');
     });
   //\Confetti effect
