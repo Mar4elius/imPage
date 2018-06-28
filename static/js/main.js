@@ -11,33 +11,46 @@ $(document).ready(function (e) {
 
 
 
-
+  //Confetti effect
   $(".project").hover(
-
+    //function for hover on
     function (evt) {
-      //var bar = $(this).siblings();
+       //get all child elemnts of project div
       var bar = $(this).find("*");
-      var progress = bar[3].getAttribute('data-progress').slice(0,-1);
-
-       if (progress == 100) {
-
+      //get the value of the progress bar from data attribute
+      var progress = bar[5].getAttribute('data-progress').slice(0, -1);
+      //run confetti animation if progress 100%
+      if (progress == 100) {
+        $('.text').text('Finished');
+        $('.text').addClass('animated infinite tada');
         $(this).addClass("confettiBlock");
+        
 
-        for (var i = 0; i < 170; i++) {
+
+        for (var i = 0; i < 100; i++) {
           create(i);
         }
+      }else{
+        $('.text').text('In progress...');
+        $('.text').addClass('animated infinite hinge');
       }
     },
+    //function for hover off
     function () {
+      //that is not really correct but it works.
+      //find all elements that has been created for confetti effect
       var confetti = document.querySelectorAll('#confettiID');
 
       for (var i = 0; i < confetti.length; i++) {
         confetti[i].remove();
       }
       $(this).removeClass('confettiBlock');
+      $('.text').removeClass('animated infinite hinge');
+      $('.text').removeClass('animated infinite tada');
     });
+  //\Confetti effect
 
-
+//Progress bar effect
   $(window).scroll(function (evt) {
 
     evt.preventDefault();
@@ -59,15 +72,17 @@ $(document).ready(function (e) {
 
         setTimeout(function () { emptyProgressBar(bar, width); }, 1000);
 
-        setTimeout(function () { finalProgressBar(bar); }, 2500);
+        setTimeout(function () { finalProgressBar(bar); }, 2000);
         flag = false;
       }
     }
 
-  }); // window scroll
+
+  }); // window scroll //\Progress bar effect
+  
   //google maps 
   google.maps.event.addDomListener(window, 'load', initMap);
-
+ //\google maps 
 
 
 

@@ -11,7 +11,12 @@
                 <div class="project">
                     <h3>{{.projectName}}</h3>
 
-                    <img class="img-fluid" src="{{ .Site.BaseURL }}{{.projectImg}}">
+
+                    <img class="img-fluid" src="{{ .Site.BaseURL }}{{.projectImg}}" class="image">
+                    <div class="middle">
+                        <div class="text"></div>
+                    </div>
+
 
                     <div class="progress mt-4">
                         <div class="progress-bar progress-bar-color" data-progress="{{.projectProgress}}" style="width: 0%"></div>
