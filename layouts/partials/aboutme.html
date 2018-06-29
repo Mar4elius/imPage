@@ -6,8 +6,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8">
-                <p>{{ .Site.Params.aboutme.description }}</p>
+            <div class="col-lg-8" id="helloShow">
+                {{ .Site.Params.aboutme.description | markdownify}}
             </div>
             <div class="col-lg-4">
                 <img class="rounded-circle img-fluid" src="{{.Site.BaseURL}}/{{.Site.Params.aboutme.image}}">

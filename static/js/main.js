@@ -9,8 +9,6 @@ $(document).ready(function (e) {
       $(this).removeClass("animated swing");
     });
 
-
-
   //Confetti effect
   $(".project").hover(
     //function for hover on
@@ -56,7 +54,13 @@ $(document).ready(function (e) {
     evt.preventDefault();
     //get current position of the scroll
     var currentScrlPos = $(window).scrollTop();
-    //get the top position of div
+    console.log(currentScrlPos);
+    if(currentScrlPos == 400){
+      var helloWord = document.querySelector('#helloShow h3');
+      showHello(helloWord);
+    }
+    //var aboutmePos = $('')
+    //get the top position of mywork div
     var scrollOffset = $('#mywork').offset().top;
     //if user reaches the top of the page reset flag 
     if (currentScrlPos >= 0 && currentScrlPos <= 50) {
@@ -76,8 +80,6 @@ $(document).ready(function (e) {
         flag = false;
       }
     }
-
-
   }); // window scroll //\Progress bar effect
   
   //google maps 

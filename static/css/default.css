@@ -84,7 +84,9 @@ header h1 span{
     letter-spacing: 0.05rem;
     color:white;
 }
-
+#helloShow h3{
+    visibility: hidden;
+}
 
 
 

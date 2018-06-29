@@ -21,11 +21,12 @@ github = "https://github.com/Mar4elius"
 
 title = "About me"
 
-description = 'Hello!!! Thank you for visiting my personal website.
-My name is Igor. In April 2018, I graduated from Northern Alberta Institute of Technology (NAIT), finishing Digital Media and IT program, Computer Software Development stream. In the header of this website you can find three words that describe who I am: Programmer, Thinker, Human.
-I am programmer. Three years ago, I started to write my first lines of code at NAIT. And from the very first day I understand that it is what I want to do in my life. At the very start it wasn’t easy to get into it. However, with every new attempt, new challenge, another line of code my skills were improving. As a result, I created my first small program. The feeling of accomplishment and reaching the goal is one of the best feelings that programmer can get. I only regret that I didn’t start coding earlier. 
-I am thinker. Ability to analyze and think is most valuable skills that any person has. Without these parts, person doesn’t live but just exists. And I want to live, and I do. Every minute of the day I’m thinking about and analyzing various tasks that must be solved. Especially with programming that takes a huge part of my life. Coding is all about understanding the task and trying to find the best way of solving it. There is no better way to be a thinker than programmer.
-I am human. Unfortunately, with nowadays realities, there are not many people who can be called humans. But, I treat people the same way that I would like them to treat me: fair, honestly, friendly, with respect.'
+description = """<h3>Hello!!!</h3><br> 
+Thank you for visiting my personal website.<br><br>
+My name is Igor. In April 2018, I graduated from Northern Alberta Institute of Technology (NAIT), finishing Digital Media and IT program, Computer Software Development stream. In the header of this website you can find three words that describe who I am: Programmer, Thinker, Human.<br>
+<b>I am programmer</b>. Three years ago, I started to write my first lines of code at NAIT. And from the very first day I understand that it is what I want to do in my life. At the very start it wasn’t easy to get into it. However, with every new attempt, new challenge, another line of code my skills were improving. As a result, I created my first small program. The feeling of accomplishment and reaching the goal is one of the best feelings that programmer can get. I only regret that I didn’t start coding earlier.<br> 
+<b>I am thinker</b>. Ability to analyze and think is most valuable skills that any person has. Without these parts, person doesn’t live but just exists. And I want to live, and I do. Every minute of the day I’m thinking about and analyzing various tasks that must be solved. Especially with programming that takes a huge part of my life. Coding is all about understanding the task and trying to find the best way of solving it. There is no better way to be a thinker than programmer.<br>
+<b>I am human</b>. Unfortunately, with nowadays realities, there are not many people who can be called humans. Opposite to a common trait, I treat people the same way I would like them to treat me: fair, honestly, friendly with respect.<br>"""
 
 image = "img/about_me.png"
 

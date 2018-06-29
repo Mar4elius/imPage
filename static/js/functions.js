@@ -1,4 +1,9 @@
+function showHello(helloWord){
+    $(helloWord).css("visibility","visible");
+    $(helloWord).addClass('animated bounceInLeft');
+}
 
+// progress bars
 function fillProgressBar(bar, width) {
     for (var i = 0; i < bar.length; i++) {
         while (width != 100) {
@@ -28,6 +33,7 @@ function finalProgressBar(bar) {
         bar[k].style.width = finallBar;
     }
 }
+// \progress bars
 //  validation for input form
 $(function () {
     
@@ -276,3 +282,4 @@ function create(i) {
       drop(x);             
     });
   }
+  //\confetti functions
