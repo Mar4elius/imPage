@@ -8,7 +8,7 @@
 
     {
         "projectID": 2,
-        "projectName": "Project 2",
+        "projectName": "PHP Image Gallery",
         "projectImg": "img/projects/projects.png",
         "projectProgress": "100%"
     },

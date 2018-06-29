@@ -1,7 +1,7 @@
 ---
 title: "Contacts"
 date: 2018-06-11T15:10:00-06:00
-draft: true
+draft: false
 type: "contacts" #find template in layouts folder with the name "contacts" and use that template to display current info
 menu: "mainmenu" # means that this will be a nivagation menu page.
 image: "contacts.jpg"

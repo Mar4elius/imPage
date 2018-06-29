@@ -207,4 +207,20 @@ h3{
     border: 0.1rem solid var(--nav-bg-color);
     }
 
+    ul{
+        list-style-type: none;
+    }
+
+    li a{
+        color: var(--h-tag-color);
+        font-weight: 700;
+    }
+    li a:hover{
+        color: var(--orange-color);
+        text-decoration: none;
+    }
+
+    
+
+
   /* ---FOOTER--- */
