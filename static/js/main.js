@@ -23,8 +23,6 @@ $(document).ready(function (e) {
         $('.text').addClass('animated infinite tada');
         $(this).addClass("confettiBlock");
         
-
-
         for (var i = 0; i < 100; i++) {
           create(i);
         }

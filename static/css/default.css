@@ -134,6 +134,7 @@ h3{
   
   .project:hover .middle {
     opacity: 1;
+    text-decoration: none;
   }
 
 .middle {
