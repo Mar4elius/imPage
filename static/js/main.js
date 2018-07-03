@@ -54,12 +54,11 @@ $(document).ready(function (e) {
     evt.preventDefault();
     //get current position of the scroll
     var currentScrlPos = $(window).scrollTop();
-    console.log(currentScrlPos);
-    if(currentScrlPos == 400){
+    //show word HELLO when reach this point 
+    if(currentScrlPos >= 400 && currentScrlPos <= 500){
       var helloWord = document.querySelector('#helloShow h3');
       showHello(helloWord);
     }
-    //var aboutmePos = $('')
     //get the top position of mywork div
     var scrollOffset = $('#mywork').offset().top;
     //if user reaches the top of the page reset flag 
@@ -85,6 +84,7 @@ $(document).ready(function (e) {
   //google maps 
   google.maps.event.addDomListener(window, 'load', initMap);
  //\google maps 
+
 
 
 

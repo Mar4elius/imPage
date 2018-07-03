@@ -36,33 +36,29 @@ function finalProgressBar(bar) {
 // \progress bars
 //  validation for input form
 $(function () {
-    
-    $.validator.setDefaults({
-        
-        highlight: function(element){
-           // $(element).closest('.form-group').addClass('text-warning');
-            $('.error').addClass('text-danger');
-        },
-        unhighlight: function(element){
-            $('#.error').removeClass('text-danger');
-        }
+    //check for letter only;
+    $.validator.addMethod("alphabetsnspace", function(value, element) {
+        return this.optional(element) || /^[a-zA-Z ]*$/.test(value);
     });
-
-    $("form").validate({
+  
+   $("form[name='form']").validate({
+    errorPlacement: function(label, element) {
+        label.addClass('text-danger');
+        label.insertAfter(element);
+    },
+    wrapper: 'span',
         rules: {
             name: {
-                required: true,
-                lettersonly: true,
-                name: true,
-                minlength: 2
+                required: true,              
+                minlength: 2,
+                alphabetsnspace: true
             },
             email: {
                 required: true,
                 email: true
             },
             message: {
-                required: true,
-                message: true,
+                required: true,              
                 minlength: 25
             }
         },
@@ -70,7 +66,7 @@ $(function () {
             name: {
                 required: 'Please enter your name.',
                 minlength: 'Name must have at least <em>2</em> characters.',
-                lettersonly: 'Name <em>can not</em> contain numbers.'
+                alphabetsnspace: 'Name <em>can not</em> contain numbers.'
             },
             email: {
                 required: 'Please enter your email address.',
@@ -80,10 +76,14 @@ $(function () {
                 required: 'Please enter your message.',
                 minlength: 'Message must have at least 25 characters.'
             }
+        },
+        submitHandler: function(form, evt){
+          evt.preventDefault();
+            form.submit();
         }
     });
-});
-
+  
+  });//validation plugin 
 //google maps
 function initMap(){
     //edmonton downtown location
