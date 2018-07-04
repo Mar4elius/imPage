@@ -9,18 +9,18 @@
 
     {
         "projectID": 2,
-        "projectName": "Project 2",
-        "projectImg": "img/projects/projects.png",
+        "projectName": "Thinking...",
+        "projectImg": "img/projects/projects.jpg",
         "projectProgress": "20%",
         "projectURL":"404.html"
     },
     
     {
         "projectID": 3,
-        "projectName": "Project 3",
-        "projectImg": "img/projects/projects.png",
-        "projectProgress": "80%",
-        "projectURL":"404.html"
+        "projectName": "F1 Drivers",
+        "projectImg": "img/projects/f1_project.png",
+        "projectProgress": "100%",
+        "projectURL":"f1_project"
     },
 
     {

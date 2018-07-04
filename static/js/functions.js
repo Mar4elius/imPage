@@ -45,6 +45,7 @@ $(function () {
     errorPlacement: function(label, element) {
         label.addClass('text-danger');
         label.insertAfter(element);
+
     },
     wrapper: 'span',
         rules: {
@@ -77,10 +78,10 @@ $(function () {
                 minlength: 'Message must have at least 25 characters.'
             }
         },
-        submitHandler: function(form, evt){
-          evt.preventDefault();
-            form.submit();
-        }
+        submitHandler: function(form){
+              form.submit();
+            }
+       
     });
   
   });//validation plugin 

@@ -7,7 +7,8 @@ menu: "mainmenu" # means that this will be a nivagation menu page.
 image: "contacts.jpg"
 ---
 
-Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
+If you have any additional questions or would like to meet in person please fill up the form below.
+I will answer you as soon as possible.
 
 
 
