@@ -19,8 +19,8 @@ $(document).ready(function (e) {
       var progress = bar[5].getAttribute('data-progress').slice(0, -1);
       //run confetti animation if progress 100%
       if (progress == 100) {
-        $('.text').text('Completed!!!');
-        $('.text').addClass('animated infinite tada');
+        $('.text').text('Check it out!');
+        $('.text').addClass('animated tada');
         $(this).addClass("confettiBlock");
         
         for (var i = 0; i < 100; i++) {

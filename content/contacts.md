@@ -7,8 +7,9 @@ menu: "mainmenu" # means that this will be a nivagation menu page.
 image: "contacts.jpg"
 ---
 
-If you have any additional questions or would like to meet in person please fill up the form below.
-I will answer you as soon as possible.
+Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice cup of coffee here in stunning Edmonton... just feel free to drop me a line anytime.
+
+I promise to reply A.S.A.P.
 
 
 
