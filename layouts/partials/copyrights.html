@@ -2,13 +2,14 @@
     <div class="container">
         <div class="row py-4 align-items-center">
 
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-4 col-md-12">
                     {{ if isset .Site.Params "copyright" }} 
                     <p>{{ .Site.Params.copyright | safeHTML }}</p> 
                         {{ end }}
                 </div>
 
-                <div class=" col-lg-6 col-md-12 ">
+                <div class="col-lg-8 col-md-12">
+                    <div class="float_right">
                     <p>Created using</p>
                     <a href="https://gohugo.io/">
                         <img class="img-fluid" style="size:25%" src="{{.Site.BaseURL}}/img/Hugo.png">
@@ -16,8 +17,9 @@
                     <a href="https://getbootstrap.com">
                         <img class="img-fluid" src="{{.Site.BaseURL}}/img/bootstrap.png">
                     </a> <p>and</p>
-                    <img src="{{.Site.BaseURL}}/img/brain.png">
+                    <img class="img-fluid" src="{{.Site.BaseURL}}/img/brain.png">
                 </div>
+            </div>
 
         </div>
     </div>

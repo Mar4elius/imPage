@@ -166,9 +166,7 @@ header h1 span{
         padding: 0.5rem;
         border: white solid 0.5rem;
     }
-    .text_left{
-        text-align: center !important;
-    }
+  
 }
 @media only screen and (max-width:995px){
     #swapDivs{
@@ -184,16 +182,11 @@ header h1 span{
         margin-right: 0px;
         padding: 0;
     }
-}
-@media only screen and (max-width:765px){
-    
-    .allignLI
-    {
-        display: inline-block;
-        margin-right: 0px;
-        padding: 0;
+    .float_right{
+        float: left !important;
     }
 }
+
 
 /* ---/HEADER--- */
 
@@ -285,6 +278,10 @@ h3{
   }
 .copyright{
     background-color: var(--nav-bg-color);
+}
+
+.float_right{
+    float: right;
 }
 
 
