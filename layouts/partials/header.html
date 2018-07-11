@@ -1,13 +1,18 @@
 <header>
-  <nav class="navbar navbar-expand-sm ">
+  <nav class="navbar navbar-expand-md">
     <!--need this container to adjust position of the elemens inside nav tag -->
     <div class="container ">
+      <!-- logo -->
       <a class="navbar-brand" href="{{.Site.BaseURL}}">
         <img src="{{.Site.BaseURL}}/img/logo.png">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span> </span>
+          <span> </span>
+          <span> </span>      
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -23,7 +28,6 @@
           {{end}}
         </ul>
       </div>
-
     </div>
   </nav>
   {{if eq .Params.type "contacts"}}
