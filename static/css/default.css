@@ -90,7 +90,7 @@ header h1 span{
 
 
 /* hamburger menu */
-
+/* https://www.codeply.com/go/PkEufEnojF/bootstrap-4-navbar-animated-toggle-hamburger-close */
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: 0;
@@ -147,6 +147,10 @@ header h1 span{
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+.navbar-collapse a{
+    text-align: center;
+}
+
 /* \hamburger menu */
 
 /* ---/HEADER--- */
