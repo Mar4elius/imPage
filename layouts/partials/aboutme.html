@@ -5,7 +5,7 @@
                 <h1>{{ .Site.Params.aboutme.title}}</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="swapDivs">
             <div class="col-lg-8" id="helloShow">
                 {{ .Site.Params.aboutme.description | markdownify}}
             </div>

@@ -71,6 +71,7 @@ header h1{
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
+    text-align: center;
 }
 header h1 span{ 
     display: inline-block;
@@ -152,6 +153,47 @@ header h1 span{
 }
 
 /* \hamburger menu */
+
+@media only screen and (max-width:620px){
+    header h1{
+        font-size: 3.2rem;
+        font-weight: 400;
+       
+        text-align: center;
+    }
+    header h1 span{ 
+        display: inline-block;
+        padding: 0.5rem;
+        border: white solid 0.5rem;
+    }
+    .text_left{
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width:995px){
+    #swapDivs{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text_left{
+        text-align: center !important;
+    }
+    .allignLI
+    {
+        display: inline-block;
+        margin-right: 0px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width:765px){
+    
+    .allignLI
+    {
+        display: inline-block;
+        margin-right: 0px;
+        padding: 0;
+    }
+}
 
 /* ---/HEADER--- */
 
@@ -283,6 +325,11 @@ h3{
         color: var(--orange-color);
         text-decoration: none;
     }
+    .text_left{
+        text-align: left;
+    }
+
+ 
 
     
 

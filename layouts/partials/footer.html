@@ -2,19 +2,23 @@
     <div class="container" id="contacts">
         <div class="row text-center heading">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4 col-md-4">
                 <h4>CONTACTS</h4>
-                <div class="text-left">
+
+                <div class="text_left">
                     <h6>Let's chat!</h6>
                     <i class="fas fa-phone"></i>&nbsp;{{.Site.Params.contacts.phone}}
                     <br>
-                    <i class="fas fa-envelope-open"></i>&nbsp;{{ .Site.Params.contacts.email}}<br>
-                    <h6>Location</h6> 
-                    <i class="fas fa-home pb-4"></i>&nbsp;{{ .Site.Params.contacts.address}}</div>               
-                <a href="{{.Site.BaseURL}}/contacts" class="btn btn-contacts">Go to contact page</a>
-            </div>
+                    <i class="fas fa-envelope-open"></i>&nbsp;{{ .Site.Params.contacts.email}}
+                    <br>
+                    <h6>Location</h6>
+                    <i class="fas fa-home pb-4"></i>&nbsp;{{ .Site.Params.contacts.address}}
+                    <br>
+                    <a href="{{.Site.BaseURL}}/contacts" class="btn btn-contacts">Go to contact page</a>
+                </div>
 
-            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-4 col-md-4">
                 <h4>Social</h4>
                 <br>
                 <a target="_blank" href="{{.Site.Params.contacts.github}}">
@@ -25,27 +29,32 @@
                 </a>
 
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4 col-md-4">
                 <h4>Thank's to: </h4>
-                <div class="text-left">
-                <ul>
-                    <li><a href="https://daneden.github.io/animate.css/">Animate CSS</a></li>
-                    <li><a href="http://www.cagrimmett.com/til/2018/01/05/css-confetti.html">Confetti</a></li>
-                    <li><a href ="https://jqueryvalidation.org">jQuery Validation Plugin</a></li>
-                    <li><a href ="https://pixabay.com">Pixbay Stunning Free Images</a></li>
-                    <li><a href="https://www.freelogodesign.org">Free Logo Design</a></li>
-                    <li><a href="https://avatarmaker.com">Avatar Maker</a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="col-lg-3">
-
+                <div class="text_left">                    
+                    <ul class="allignLI">
+                        <li>
+                            <a href="https://daneden.github.io/animate.css/">Animate CSS</a>
+                        </li>
+                        <li>
+                            <a href="http://www.cagrimmett.com/til/2018/01/05/css-confetti.html">Confetti</a>
+                        </li>
+                        <li>
+                            <a href="https://jqueryvalidation.org">jQuery Validation Plugin</a>
+                        </li>
+                        <li>
+                            <a href="https://pixabay.com">Pixbay Stunning Free Images</a>
+                        </li>
+                        <li>
+                            <a href="https://www.freelogodesign.org">Free Logo Design</a>
+                        </li>
+                        <li>
+                            <a href="https://avatarmaker.com">Avatar Maker</a>
+                        </li>
+                    </ul>
+                
+                </div>
             </div>
         </div>
     </div>
 </footer>
-
-
-
-
-

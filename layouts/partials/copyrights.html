@@ -1,15 +1,14 @@
 <div class="copyright">
     <div class="container">
         <div class="row py-4 align-items-center">
-            <!-- <div class="col-lg-6"> -->
-                <div class="">
+
+                <div class="col-lg-6 col-md-12">
                     {{ if isset .Site.Params "copyright" }} 
                     <p>{{ .Site.Params.copyright | safeHTML }}</p> 
                         {{ end }}
                 </div>
-            <!-- </div> -->
-            <!-- <div class="col-lg-6"> -->
-                <div class="ml-auto">
+
+                <div class=" col-lg-6 col-md-12 ">
                     <p>Created using</p>
                     <a href="https://gohugo.io/">
                         <img class="img-fluid" style="size:25%" src="{{.Site.BaseURL}}/img/Hugo.png">
@@ -19,7 +18,7 @@
                     </a> <p>and</p>
                     <img src="{{.Site.BaseURL}}/img/brain.png">
                 </div>
-            <!-- </div> -->
+
         </div>
     </div>
 </div>
