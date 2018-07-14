@@ -9,10 +9,10 @@
 
     {
         "projectID": 2,
-        "projectName": "Thinking...",
-        "projectImg": "img/projects/projects.jpg",
-        "projectProgress": "20%",
-        "projectURL":"404.html"
+        "projectName": "Movie Info App",
+        "projectImg": "img/projects/movie_time.jpg",
+        "projectProgress": "70%",
+        "projectURL":"MovieApp"
     },
     
     {
@@ -26,24 +26,24 @@
     {
         "projectID": 4,
         "projectName": "Project 4",
-        "projectImg": "img/projects/projects.png",
-        "projectProgress": "75%",
+        "projectImg": "img/projects/projects.jpg",
+        "projectProgress": "0%",
         "projectURL":"404.html"
     },
 
     {
         "projectID": 5,
         "projectName": "Project 5",
-        "projectImg": "img/projects/projects.png",
-        "projectProgress": "50%",
+        "projectImg": "img/projects/projects.jpg",
+        "projectProgress": "0%",
         "projectURL":"404.html"
     },
 
     {
         "projectID": 6,
         "projectName": "Project 6",
-        "projectImg": "img/projects/projects.png",
-        "projectProgress": "30%",
+        "projectImg": "img/projects/projects.jpg",
+        "projectProgress": "0%",
         "projectURL":"404.html"
     }
 ]
